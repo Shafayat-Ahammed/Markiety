@@ -1,11 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary-black: #090909;
+  --color-primary-blue: #273fb7;
+}
+
 * {
   @apply box-border;
 }
 
 body {
-  @apply m-0 p-0;
+  @apply bg-primary-black m-0 p-0;
 }
 
 img {
