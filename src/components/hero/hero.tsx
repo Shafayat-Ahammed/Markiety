@@ -4,7 +4,6 @@ import ActionButton from "../action-button/action-button";
 const Hero: FunctionComponent = (): JSX.Element => {
   return (
     <main
-      id="hero"
       className="bg-[url(/assets/hero-bg.avif))] bg-no-repeat bg-center bg-cover z-90 mb-30"
     >
       <div className="w-full h-full inset-0 bg-black/80 px-5 sm:px-10 py-35 2xl:py-40">

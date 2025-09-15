@@ -68,7 +68,7 @@ const AboutFounder: FunctionComponent = (): JSX.Element => {
   ];
 
   return (
-    <section id="why-us" className="px-5 sm:px-10 mb-30 z-90">
+    <article id="about-founder" className="px-5 sm:px-10 mb-30 z-90">
       <div className="mx-auto max-w-[1536px]">
         <SectionHeader
           title="meet the visionary"
@@ -129,7 +129,7 @@ const AboutFounder: FunctionComponent = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
 };
 
