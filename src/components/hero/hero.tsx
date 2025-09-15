@@ -7,7 +7,7 @@ const Hero: FunctionComponent = (): JSX.Element => {
       id="hero"
       className="bg-[url(/assets/hero-bg.avif))] bg-no-repeat bg-center bg-cover z-90 mb-30"
     >
-      <div className="w-full h-full inset-0 bg-black/80 px-5 sm:px-10 py-35">
+      <div className="w-full h-full inset-0 bg-black/80 px-5 sm:px-10 py-35 2xl:py-40">
         <div className="mx-auto max-w-[1536px] flex flex-col justify-center items-center gap-5">
           <div>
             <h2 className="text-white font-bold text-[38px] sm:text-[44px] md:text-[52px] 2xl:text-[60px] text-center leading-14 sm:leading-15 md:leading-16">
