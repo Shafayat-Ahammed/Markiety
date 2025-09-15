@@ -85,9 +85,9 @@ const Header: FunctionComponent = (): JSX.Element => {
                 />
               </div>
               <div>
-                <h3 className="text-white text-xl 2xl:text-[25px] font-semibold">
+                <h1 className="text-white text-xl 2xl:text-[25px] font-semibold">
                   Markiety
-                </h3>
+                </h1>
               </div>
             </a>
           </div>
@@ -124,7 +124,7 @@ const Header: FunctionComponent = (): JSX.Element => {
                 viewBox="0 0 640 640"
                 width={40}
                 height={40}
-                className="fill-white hover:fill-gray-300 transition-colors"
+                className="fill-white hover:fill-gray-400 transition-colors"
               >
                 <path d="M64 160C64 142.3 78.3 128 96 128L480 128C497.7 128 512 142.3 512 160C512 177.7 497.7 192 480 192L96 192C78.3 192 64 177.7 64 160zM128 320C128 302.3 142.3 288 160 288L544 288C561.7 288 576 302.3 576 320C576 337.7 561.7 352 544 352L160 352C142.3 352 128 337.7 128 320zM512 480C512 497.7 497.7 512 480 512L96 512C78.3 512 64 497.7 64 480C64 462.3 78.3 448 96 448L480 448C497.7 448 512 462.3 512 480z" />
               </svg>
@@ -132,7 +132,10 @@ const Header: FunctionComponent = (): JSX.Element => {
           </div>
         </div>
       </header>
-      <div className="fixed top-20 sm:top-21 right-0 sm:right-10 z-99 w-full sm:w-[400px]">
+      <div
+        id="small-nav-menu"
+        className="fixed top-20 sm:top-21 right-0 sm:right-10 z-99 w-full sm:w-[400px]"
+      >
         <AnimatePresence>
           {open && (
             <motion.div

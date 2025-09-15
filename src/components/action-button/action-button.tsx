@@ -1,11 +1,11 @@
-import type { FunctionComponent, JSX, ReactNode } from "react";
+import type { FunctionComponent, JSX } from "react";
 
 interface ActionButtonProps {
   href: string;
   border: string;
   px: string;
   py: string;
-  label: ReactNode;
+  label: string;
 }
 
 const ActionButton: FunctionComponent<ActionButtonProps> = ({
