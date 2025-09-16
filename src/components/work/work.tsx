@@ -315,6 +315,10 @@ const Works: FunctionComponent = (): JSX.Element => {
           </Swiper>
 
           <div className="absolute bottom-5 z-90 w-full flex justify-between">
+            {loading &&
+              [1, 2].map((_, index: number): JSX.Element => {
+                return <CarouselButtonLoadingSkeleton key={index} />;
+              })}
             {!loading &&
               [1, 2].map((_, index: number): JSX.Element => {
                 return (
@@ -324,10 +328,6 @@ const Works: FunctionComponent = (): JSX.Element => {
                     swiperRef={swiperRef}
                   />
                 );
-              })}
-            {loading &&
-              [1, 2].map((_, index: number): JSX.Element => {
-                return <CarouselButtonLoadingSkeleton key={index} />;
               })}
           </div>
         </div>

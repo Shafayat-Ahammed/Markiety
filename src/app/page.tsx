@@ -5,6 +5,7 @@ import Services from "@/components/services/services";
 import WhyUs from "@/components/why-us/why-us";
 import AboutFounder from "@/components/about-founder/about-founder";
 import Work from "@/components/work/work";
+import Testimonials from "@/components/testimonials/testimonials";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <Services />
       <WhyUs />
       <Work />
+      <Testimonials />
       <AboutFounder />
     </>
   );
