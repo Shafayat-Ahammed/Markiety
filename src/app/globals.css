@@ -19,3 +19,31 @@ img {
   -webkit-user-drag: none;
   -moz-user-select: none;
 }
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-prev::after {
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-next::after {
+  display: none !important;
+}
+
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-next-next {
+  background-color: white !important;
+  opacity: 100 !important;
+}
+
+.swiper-pagination-bullet-active-main {
+  background-color: #273fb7 !important;
+}

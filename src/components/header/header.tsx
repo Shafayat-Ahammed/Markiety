@@ -3,7 +3,7 @@
 import { type FunctionComponent, type JSX, useState, useEffect } from "react";
 import Image from "next/image";
 import NavMenuItem from "./nav-menu-item";
-import ActionButton from "../action-button/action-button";
+import PrimaryButton from "../primary-button/primary-button";
 import { motion, AnimatePresence } from "motion/react";
 
 interface NavMenuItem {
@@ -105,11 +105,22 @@ const Header: FunctionComponent = (): JSX.Element => {
             </ul>
           </nav>
           <div className="hidden lg:block text-base 2xl:text-xl">
-            <ActionButton
+            <PrimaryButton
               href="/#contact"
               border="border-6"
               px="px-2.5"
               py="py-1"
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  width={22}
+                  height={22}
+                  className="w-[20px] h-[20px] 2xl:w-[22px] 2xl:h-[22px] mt-0.5 fill-white"
+                >
+                  <path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                </svg>
+              }
               label="Book A Call"
             />
           </div>
@@ -165,11 +176,22 @@ const Header: FunctionComponent = (): JSX.Element => {
                   </ul>
                 </nav>
                 <div>
-                  <ActionButton
+                  <PrimaryButton
                     href="/#contact"
                     border="border-4"
                     px="px-3"
                     py="py-1.5"
+                    icon={
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640"
+                        width={22}
+                        height={22}
+                        className="w-[20px] h-[20px] 2xl:w-[22px] 2xl:h-[22px] mt-0.5 fill-white"
+                      >
+                        <path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z" />
+                      </svg>
+                    }
                     label="Book A Call"
                   />
                 </div>

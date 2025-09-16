@@ -4,6 +4,7 @@ import Hero from "@/components/hero/hero";
 import Services from "@/components/services/services";
 import WhyUs from "@/components/why-us/why-us";
 import AboutFounder from "@/components/about-founder/about-founder";
+import Work from "@/components/work/work";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <Hero />
       <Services />
       <WhyUs />
+      <Work />
       <AboutFounder />
     </>
   );

@@ -45,9 +45,9 @@ const WhyUs: FunctionComponent = (): JSX.Element => {
                 />
               </div>
               <div>
-                <h2 className="text-white font-bold text-3xl sm:text-4xl 2xl:text-[41px]">
+                <h3 className="text-white font-bold text-3xl sm:text-4xl 2xl:text-[41px]">
                   Markiety
-                </h2>
+                </h3>
               </div>
             </div>
             <div className="flex flex-col gap-5">
@@ -61,9 +61,9 @@ const WhyUs: FunctionComponent = (): JSX.Element => {
 
           <div className="bg-[radial-gradient(circle_farthest-corner_at_50%_0%,#1e2230_8%,#0e0e0f_54%,#090909_103%)] border border-gray-800 rounded-3xl p-10 flex flex-col gap-10 hover:scale-102 transition-transform cursor-default">
             <div>
-              <h2 className="text-white font-bold text-3xl sm:text-4xl 2xl:text-[41px]">
+              <h3 className="text-white font-bold text-3xl sm:text-4xl 2xl:text-[41px]">
                 Other Agencies
-              </h2>
+              </h3>
             </div>
             <div className="flex flex-col gap-5">
               {consContents.map((consContent, index: number): JSX.Element => {
