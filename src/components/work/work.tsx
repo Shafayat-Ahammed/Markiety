@@ -201,7 +201,7 @@ const Work: FunctionComponent = (): JSX.Element => {
             slidesPerView={2}
             spaceBetween={32}
             autoplay={{
-              delay: 500000000,
+              delay: 10000,
               disableOnInteraction: false,
             }}
             loop={true}

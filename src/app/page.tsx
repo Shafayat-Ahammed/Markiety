@@ -6,6 +6,8 @@ import WhyUs from "@/components/why-us/why-us";
 import AboutFounder from "@/components/about-founder/about-founder";
 import Work from "@/components/work/work";
 import Testimonials from "@/components/testimonials/testimonials";
+import Team from "@/components/team/team";
+import FAQ from "@/components/faq/faq";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -17,6 +19,8 @@ const Home: FunctionComponent = (): JSX.Element => {
       <Work />
       <Testimonials />
       <AboutFounder />
+      <Team />
+      <FAQ />
     </>
   );
 };

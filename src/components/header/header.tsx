@@ -81,7 +81,7 @@ const Header: FunctionComponent = (): JSX.Element => {
                 />
               </div>
               <div>
-                <h1 className="text-white text-xl 2xl:text-[25px] font-semibold">
+                <h1 className="text-white text-xl 2xl:text-[25px] font-bold">
                   Markiety
                 </h1>
               </div>
@@ -140,7 +140,6 @@ const Header: FunctionComponent = (): JSX.Element => {
         </div>
       </header>
       <div
-        id="small-nav-menu"
         className="fixed top-20 sm:top-21 right-0 sm:right-10 z-99 w-full sm:w-[400px]"
       >
         <AnimatePresence>
