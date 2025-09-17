@@ -5,11 +5,7 @@ import Image from "next/image";
 import NavMenuItem from "./nav-menu-item";
 import PrimaryButton from "../primary-button/primary-button";
 import { motion, AnimatePresence } from "motion/react";
-
-interface NavMenuItem {
-  href: string;
-  label: string;
-}
+import type { NavMenuItemType } from "./types";
 
 const Header: FunctionComponent = (): JSX.Element => {
   const [hash, setHash] = useState<string | undefined>(undefined);
@@ -37,7 +33,7 @@ const Header: FunctionComponent = (): JSX.Element => {
     };
   }, []);
 
-  const navMenuItems: NavMenuItem[] = [
+  const navMenuItems: NavMenuItemType[] = [
     {
       href: "#services",
       label: "Services",

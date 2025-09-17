@@ -1,10 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-
-interface NavMenuItemProps {
-  href: string;
-  hash?: string;
-  label: string;
-}
+import type { NavMenuItemType as NavMenuItemProps } from "./types";
 
 const NavMenuItem: FunctionComponent<NavMenuItemProps> = ({
   href,

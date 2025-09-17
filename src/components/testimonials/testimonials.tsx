@@ -17,8 +17,9 @@ import { SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import CarouselButton from "../carousel-button/carousel-button";
 import CarouselButtonLoadingSkeleton from "../carousel-button/carousel-button-loading-skeleton";
-import { div } from "motion/react-client";
 import TestimonialLoadingSkeleton from "./testimonial-loading-skeleton";
+import Testimonial from "./testimonial";
+import type { TestimonialType } from "./types";
 
 const Testimonials: FunctionComponent = (): JSX.Element => {
   const swiperRef: RefObject<SwiperType | null> = useRef<SwiperType | null>(
@@ -27,7 +28,7 @@ const Testimonials: FunctionComponent = (): JSX.Element => {
 
   const [loading, setLoading] = useState<boolean>(true);
 
-  const testimonials = [
+  const testimonials: TestimonialType[] = [
     {
       feedback:
         '"Markiety transformed our online presence! Their video strategy significantly boosted our engagement and leads. Highly recommended!"',
@@ -109,21 +110,11 @@ const Testimonials: FunctionComponent = (): JSX.Element => {
                         key={index}
                         className="mb-18 2xl:mb-21.5 h-[auto_!important]"
                       >
-                        <div className="bg-[radial-gradient(circle_farthest-corner_at_50%_0%,#1e2230_8%,#0e0e0f_54%,#090909_103%)] border border-gray-800 rounded-3xl p-5 sm:p-10 cursor-default hover:scale-102 transition-transform h-full">
-                          <figure className="text-sm sm:text-base 2xl:text-[18.5px] flex flex-col gap-10">
-                            <div>
-                              <blockquote className="text-white">
-                                {feedback}
-                              </blockquote>
-                            </div>
-                            <div>
-                              <footer className="text-primary-gray font-semibold text-end">
-                                — - <cite>{clientName}</cite>,{" "}
-                                <cite>{clientCompany}</cite>
-                              </footer>
-                            </div>
-                          </figure>
-                        </div>
+                        <Testimonial
+                          feedback={feedback}
+                          clientName={clientName}
+                          clientCompany={clientCompany}
+                        />
                       </SwiperSlide>
                     );
                   }

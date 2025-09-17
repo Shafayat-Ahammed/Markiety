@@ -1,13 +1,10 @@
 import type { FunctionComponent, JSX } from "react";
 import SectionHeader from "../section-header/section-header";
-
-interface Service {
-  name: string;
-  description: string;
-}
+import type { ServiceType } from "./types";
+import Service from "./service";
 
 const Services: FunctionComponent = (): JSX.Element => {
-  const services: Service[] = [
+  const services: ServiceType[] = [
     {
       name: "Digital Marketing Strategy",
       description:
@@ -61,17 +58,7 @@ const Services: FunctionComponent = (): JSX.Element => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-8 sm:grid-rows-4 lg:grid-rows-3 xl:grid-rows-2 gap-4">
           {services.map(({ name, description }, index: number): JSX.Element => {
             return (
-              <div
-                key={index}
-                className="bg-[radial-gradient(circle_farthest-corner_at_50%_0%,#1e2230_8%,#0e0e0f_54%,#090909_103%)] border border-gray-800 p-4 rounded-lg cursor-default hover:scale-103 transition-transform flex flex-col gap-2"
-              >
-                <h3 className="text-white font-semibold text-base sm:text-lg md:text-xl 2xl:text-2xl">
-                  {name}
-                </h3>
-                <p className="text-primary-gray text-sm sm:text-base 2xl:text-[18.5px]">
-                  {description}
-                </p>
-              </div>
+              <Service key={index} name={name} description={description} />
             );
           })}
         </div>

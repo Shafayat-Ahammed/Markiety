@@ -1,14 +1,11 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
 import SectionHeader from "../section-header/section-header";
 import Image from "next/image";
-
-interface SocialChannel {
-  icon: ReactElement<SVGSVGElement>;
-  url: string;
-}
+import type { SocialChannelType } from "./types";
+import SocialChannel from "./social-channel";
 
 const AboutFounder: FunctionComponent = (): JSX.Element => {
-  const socialChannels: SocialChannel[] = [
+  const socialChannels: SocialChannelType[] = [
     {
       icon: (
         <svg
@@ -113,16 +110,7 @@ const AboutFounder: FunctionComponent = (): JSX.Element => {
             <div className="flex gap-3">
               {socialChannels.map(
                 ({ icon, url }, index: number): JSX.Element => {
-                  return (
-                    <a
-                      key={index}
-                      href={url}
-                      target="_blank"
-                      className="fill-primary-gray hover:fill-primary-blue transition-colors"
-                    >
-                      {icon}
-                    </a>
-                  );
+                  return <SocialChannel key={index} url={url} icon={icon} />;
                 }
               )}
             </div>
