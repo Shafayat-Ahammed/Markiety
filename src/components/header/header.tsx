@@ -43,12 +43,12 @@ const Header: FunctionComponent = (): JSX.Element => {
       label: "Why Us",
     },
     {
-      href: "#about-founder",
-      label: "About Founder",
-    },
-    {
       href: "#work",
       label: "Work",
+    },
+    {
+      href: "#testimonials",
+      label: "Testimonials",
     },
     {
       href: "#process",
@@ -139,9 +139,7 @@ const Header: FunctionComponent = (): JSX.Element => {
           </div>
         </div>
       </header>
-      <div
-        className="fixed top-20 sm:top-21 right-0 sm:right-10 z-99 w-full sm:w-[400px]"
-      >
+      <div className="fixed top-20 sm:top-21 right-0 sm:right-10 z-99 w-full sm:w-[400px]">
         <AnimatePresence>
           {open && (
             <motion.div

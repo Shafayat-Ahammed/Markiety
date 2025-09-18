@@ -50,7 +50,7 @@ const Testimonials: FunctionComponent = (): JSX.Element => {
   ];
 
   return (
-    <section className="px-5 sm:px-10 mb-30 z-90">
+    <section id="testimonials" className="px-5 sm:px-10 mb-30 z-90">
       <div className="mx-auto max-w-[1536px]">
         <SectionHeader
           title="what our clients say"

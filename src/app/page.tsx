@@ -8,6 +8,7 @@ import Work from "@/components/work/work";
 import Testimonials from "@/components/testimonials/testimonials";
 import Team from "@/components/team/team";
 import FAQ from "@/components/faq/faq";
+import Contact from "@/components/contact/contact";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -21,6 +22,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <AboutFounder />
       <Team />
       <FAQ />
+      <Contact />
     </>
   );
 };
