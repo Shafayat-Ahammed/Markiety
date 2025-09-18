@@ -10,6 +10,7 @@ import Team from "@/components/team/team";
 import FAQ from "@/components/faq/faq";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
+import Process from "@/components/process/process";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -20,6 +21,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <WhyUs />
       <Work />
       <Testimonials />
+      <Process />
       <AboutFounder />
       <Team />
       <FAQ />
