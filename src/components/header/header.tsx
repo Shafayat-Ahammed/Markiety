@@ -5,7 +5,7 @@ import Image from "next/image";
 import NavMenuItem from "./nav-menu-item";
 import PrimaryButton from "../primary-button/primary-button";
 import { motion, AnimatePresence } from "motion/react";
-import type { NavMenuItemType } from "./types";
+import { navMenuItems } from "@/lib/data";
 
 const Header: FunctionComponent = (): JSX.Element => {
   const [hash, setHash] = useState<string | undefined>(undefined);
@@ -33,33 +33,6 @@ const Header: FunctionComponent = (): JSX.Element => {
     };
   }, []);
 
-  const navMenuItems: NavMenuItemType[] = [
-    {
-      href: "#services",
-      label: "Services",
-    },
-    {
-      href: "#why-us",
-      label: "Why Us",
-    },
-    {
-      href: "#work",
-      label: "Work",
-    },
-    {
-      href: "#testimonials",
-      label: "Testimonials",
-    },
-    {
-      href: "#process",
-      label: "Process",
-    },
-    {
-      href: "#faq",
-      label: "FAQ",
-    },
-  ];
-
   return (
     <>
       <header
@@ -76,7 +49,7 @@ const Header: FunctionComponent = (): JSX.Element => {
                   alt="Markiety Logo"
                   width={50}
                   height={50}
-                  className="rounded-lg w-[40px] h-[40px] 2xl:w-[45px] 2xl:h-[45px]"
+                  className="rounded-lg w-[40px] h-[40px] 2xl:w-[50px] 2xl:h-[50px]"
                   priority={true}
                 />
               </div>
@@ -89,15 +62,20 @@ const Header: FunctionComponent = (): JSX.Element => {
           </div>
           <nav className="hidden lg:block">
             <ul className="flex gap-1.5">
-              {navMenuItems.map(
-                ({ href, label }, index: number): JSX.Element => {
-                  return (
-                    <li key={index} className="text-base 2xl:text-xl">
-                      <NavMenuItem href={href} hash={hash} label={label} />
-                    </li>
-                  );
-                }
-              )}
+              {[
+                navMenuItems[0],
+                navMenuItems[1],
+                navMenuItems[2],
+                navMenuItems[3],
+                navMenuItems[4],
+                navMenuItems[7],
+              ].map(({ href, label }, index: number): JSX.Element => {
+                return (
+                  <li key={index} className="text-base 2xl:text-xl">
+                    <NavMenuItem href={href} hash={hash} label={label} />
+                  </li>
+                );
+              })}
             </ul>
           </nav>
           <div className="hidden lg:block text-base 2xl:text-xl">
@@ -120,7 +98,7 @@ const Header: FunctionComponent = (): JSX.Element => {
               label="Book A Call"
             />
           </div>
-          <div className="h-[40px] lg:hidden">
+          <div className="h-[48px] lg:hidden">
             <button
               type="button"
               className="outline-none cursor-pointer"
@@ -129,8 +107,8 @@ const Header: FunctionComponent = (): JSX.Element => {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 640"
-                width={40}
-                height={40}
+                width={48}
+                height={48}
                 className="fill-white hover:fill-gray-400 transition-colors"
               >
                 <path d="M64 160C64 142.3 78.3 128 96 128L480 128C497.7 128 512 142.3 512 160C512 177.7 497.7 192 480 192L96 192C78.3 192 64 177.7 64 160zM128 320C128 302.3 142.3 288 160 288L544 288C561.7 288 576 302.3 576 320C576 337.7 561.7 352 544 352L160 352C142.3 352 128 337.7 128 320zM512 480C512 497.7 497.7 512 480 512L96 512C78.3 512 64 497.7 64 480C64 462.3 78.3 448 96 448L480 448C497.7 448 512 462.3 512 480z" />
@@ -153,19 +131,20 @@ const Header: FunctionComponent = (): JSX.Element => {
               >
                 <nav>
                   <ul className="flex flex-col gap-1.5">
-                    {navMenuItems.map(
-                      ({ href, label }, index: number): JSX.Element => {
-                        return (
-                          <li key={index} className="flex justify-center">
-                            <NavMenuItem
-                              href={href}
-                              hash={hash}
-                              label={label}
-                            />
-                          </li>
-                        );
-                      }
-                    )}
+                    {[
+                      navMenuItems[0],
+                      navMenuItems[1],
+                      navMenuItems[2],
+                      navMenuItems[3],
+                      navMenuItems[4],
+                      navMenuItems[7],
+                    ].map(({ href, label }, index: number): JSX.Element => {
+                      return (
+                        <li key={index} className="flex justify-center">
+                          <NavMenuItem href={href} hash={hash} label={label} />
+                        </li>
+                      );
+                    })}
                   </ul>
                 </nav>
                 <div>

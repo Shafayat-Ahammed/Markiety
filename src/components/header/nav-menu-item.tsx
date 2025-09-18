@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import type { NavMenuItemType as NavMenuItemProps } from "./types";
+import type { NavMenuItemType as NavMenuItemProps } from "@/lib/types";
 
 const NavMenuItem: FunctionComponent<NavMenuItemProps> = ({
   href,

@@ -1,5 +1,5 @@
 import type { FunctionComponent, JSX } from "react";
-import type { SocialChannelType as SocialChannelProps } from "./types";
+import type { SocialChannelType as SocialChannelProps } from "@/lib/types";
 
 const SocialChannel: FunctionComponent<SocialChannelProps> = ({
   url,

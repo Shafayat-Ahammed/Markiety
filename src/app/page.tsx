@@ -9,6 +9,7 @@ import Testimonials from "@/components/testimonials/testimonials";
 import Team from "@/components/team/team";
 import FAQ from "@/components/faq/faq";
 import Contact from "@/components/contact/contact";
+import Footer from "@/components/footer/footer";
 
 const Home: FunctionComponent = (): JSX.Element => {
   return (
@@ -23,6 +24,7 @@ const Home: FunctionComponent = (): JSX.Element => {
       <Team />
       <FAQ />
       <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,8 @@
 import type { FunctionComponent, JSX, ReactElement } from "react";
 import SectionHeader from "../section-header/section-header";
 import Image from "next/image";
-import type { SocialChannelType } from "./types";
-import SocialChannel from "./social-channel";
+import SocialChannel from "../social-channel/social-channel";
+import type { SocialChannelType } from "@/lib/types";
 
 const AboutFounder: FunctionComponent = (): JSX.Element => {
   const socialChannels: SocialChannelType[] = [
